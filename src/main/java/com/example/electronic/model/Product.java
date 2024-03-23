@@ -1,8 +1,12 @@
 package com.example.electronic.model;
 
 
-import java.util.Date;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 
+import java.util.Date;
+@AllArgsConstructor
+@NoArgsConstructor
 public class Product {
     private int id;
     private String name;
@@ -18,9 +22,8 @@ public class Product {
         this.grade = grade;
     }
 
-    public Product() {
 
-    }
+
     public Date getDate() {
         return date;
     }
