@@ -21,5 +21,4 @@ public class ProductDTO {
     @NotNull(message = "Grade cannot be null")
     private Integer grade;
 
-    // Геттеры и сеттеры
 }
