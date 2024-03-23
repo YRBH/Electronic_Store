@@ -1,14 +1,15 @@
 package com.example.electronic.model;
 
+
+import java.util.Date;
+
 public class Product {
-
+    private int id;
     private String name;
-
     private int count;
-
     private double price;
-
     private int grade;
+    private Date date;
 
     public Product(String name, int count, double price, int grade) {
         this.name = name;
@@ -17,16 +18,36 @@ public class Product {
         this.grade = grade;
     }
 
+    public Product() {
+
+    }
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
     @Override
     public String toString() {
         return "Product{" +
-                "name='" + name + '\'' +
+                "id=" + id +
+                ", name='" + name + '\'' +
                 ", count=" + count +
                 ", price=" + price +
                 ", grade=" + grade +
+                ", date=" + date +
                 '}';
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
     public String getName() {
         return name;
     }
